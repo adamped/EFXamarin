@@ -21,6 +21,7 @@ namespace EFXamarin
                 // Insert Data
                 db.Add(new Blog() { BlogId = 1, Rating = 5, Url = "https://exrin.net" });
                 db.Add(new Blog() { BlogId = 2, Rating = 5, Url = "https://xamarinhelp.com" });
+                db.Add(new Blog() { BlogId = 3, Rating = 5, Url = "https://azuremobilehelp.com" });
                 db.SaveChanges();
 
                 // Retreive Data
