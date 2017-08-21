@@ -21,6 +21,8 @@ namespace EFXamarin.iOS
 
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
+			SQLitePCL.Batteries.Init();
+
             Xamarin.Forms.Forms.Init();
 
             var dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "..", "Library", "exrin.db");
